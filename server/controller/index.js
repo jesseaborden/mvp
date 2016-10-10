@@ -6,7 +6,8 @@ const marvel = api.createClient({
 });
 
 const selectCharacter = function(req,res){
-	marvel.characters.findByName('spider-man')
+	let marvelName = req.query.name;
+	marvel.characters.findByName(marvelName)
 	.then(function(data){
 		res.send(data)
 	})

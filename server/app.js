@@ -1,9 +1,12 @@
-const app = require('express')();
+const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 const marvelRouter = require('./router').marvelRouter;
 const port = 3000;
 
 app.use(bodyParser.json());
+
+app.use(express.static('../client'));
 
 app.use('/api/', marvelRouter);
 
