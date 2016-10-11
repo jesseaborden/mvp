@@ -5,6 +5,7 @@ console.log('inside marvelRouter')
 
 router.get('/charachter', selectCharacter);
 
+
 module.exports = {
 	marvelRouter: router
 }

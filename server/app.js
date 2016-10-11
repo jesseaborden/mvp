@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const marvelRouter = require('./router').marvelRouter;
+require('./database');
 const port = 3000;
 
 app.use(bodyParser.json());

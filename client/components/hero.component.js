@@ -22,7 +22,7 @@ angular.module('heroApp').
 		controller: function heroComponent($http) {
 			const vm = this;
 			 this.selectCharacter = function(name){
-				$http.get('/api/charachter?name=' + name).
+				$http.get('/api/charachter?name=' + name). 
 				then(function(response){
 					vm.heroPath = response.data.data[0].thumbnail.path + '.' + response.data.data[0].thumbnail.extension;
 					vm.description = response.data.data[0].description;
