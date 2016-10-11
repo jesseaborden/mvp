@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.use(express.static('../client'));
+app.use(express.static(__dirname + '../client/index.html'));
 app.use('/api/', marvelRouter);
 
 app.listen(port, function(){
