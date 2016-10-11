@@ -4,8 +4,8 @@ body {
 
 #hero-style {
 	margin:0px;
-	height:100vh;
 	background: url(../assets/background.gif);
+  height:100vh;
 	color: #fff !important;
 }
 
@@ -86,6 +86,33 @@ span.animate-if.ng-scope {
 
 #comics-row img:hover {
     opacity: .5;
+}
+
+@media only screen and (max-width:1000px) { 
+  #hero-style img {
+    max-width: 200px;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  div#hero-image-section {
+    padding-right: 0px;
+    text-align: center;
+  }
+  p {
+    margin:auto;
+  }
+  #hero-name {
+    text-align: center;
+  }
+  #hero-style {
+   padding:40px;
+  }
+  #nav {
+    display: none;
+}
+
 }
 
 /*Search Bar Styles*/
