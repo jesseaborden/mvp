@@ -2,14 +2,14 @@ body {
 	margin:0;
 }
 
-#hero {
+#hero-style {
 	margin:0px;
 	height:100vh;
 	background: url(../assets/background.gif);
 	color: #fff !important;
 }
 
-#hero img {
+#hero-style img {
     max-width: 400px;
     float: right;
 }
@@ -42,6 +42,21 @@ div#hero-bio-section {
     display: block;
     margin-bottom: 200px;
 }
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+
+#comics-row {
+  margin-top:50px;
+}
+
+#comics-headline {
+  margin-top:50px;
+}
+
 /*Search Bar Styles*/
 
 .inputbox {
