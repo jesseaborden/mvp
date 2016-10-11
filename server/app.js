@@ -11,7 +11,6 @@ app.use(express.static('./client/'));
 
 app.use('/api/', marvelRouter);
 
-app.route('/*').get((req,res) )
 
 app.listen(port, function(){
 	console.log("Server listening on " + port);
