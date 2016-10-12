@@ -21,7 +21,7 @@ angular.module('heroApp').
 					</div>
 				</div>
 				<div class="row text-center">
-					<h2 id="comics-headline">Appearences</h2>
+					<h2 id="comics-headline">Appearances</h2>
 					<ul class"row" id="comics-row">
 						<li ng-repeat="comic in $ctrl.comics" class="col-sm-3">
 							<a href="{{comic.urls[0].url}}"><img ng-src="{{comic.images[0].path +  '/portrait_uncanny.' + comic.images[0].extension}}"></a>
